@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.review-form input[type="email"],
+.review-form input[type="number"],
+.review-form textarea,
+.review-form input[type="file"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.review-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.review-form button {
+    padding: 10px;
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.review-form button:hover {
+    background-color: #27ae60;
+}
+
+.review-block {
+    margin-top: 15px;
+    background: #f0f3f7;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.review-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.review-block li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.review-block img {
+    margin-top: 5px;
+    border-radius: 6px;
+    max-width: 100px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .review-form input,
+    .review-form textarea {
+        width: 100%;
+    }
+}

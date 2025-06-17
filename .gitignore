@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Uploaded images (optional: only if you don’t want to upload review photos)
+backend/uploads/
+
+# OS-generated files
+Thumbs.db
